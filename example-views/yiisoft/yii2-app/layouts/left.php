@@ -15,6 +15,7 @@
                     'items' => [
                         ['label' => 'Menu Yii2', 'header' => true],
                         ['label' => 'Gii', 'iconType' => 'far', 'icon' => 'file-code', 'url' => ['/gii']],
+                        ['label' => 'Jardin', 'iconType' => 'far', 'icon' => 'file-code', 'url' => ['/jardin']],
                         ['label' => 'Debug', 'icon' => 'tachometer-alt', 'url' => ['/debug']],
                         ['label' => 'Login', 'url' => ['site/login'], 'visible' => Yii::$app->user->isGuest],
                         [
