@@ -1,9 +1,9 @@
 AdminLTE Asset Bundle
 =====================
 
-[![Latest Stable Version](https://poser.pugx.org/dmstr/yii2-adminlte-asset/v/stable.svg)](https://packagist.org/packages/dmstr/yii2-adminlte-asset) 
-[![Total Downloads](https://poser.pugx.org/dmstr/yii2-adminlte-asset/downloads.svg)](https://packagist.org/packages/dmstr/yii2-adminlte-asset)
-[![License](https://poser.pugx.org/dmstr/yii2-adminlte-asset/license.svg)](https://packagist.org/packages/dmstr/yii2-adminlte-asset)
+[![Latest Stable Version](https://poser.pugx.org/memouk/yii2-adminlte-asset/v/stable.svg)](https://packagist.org/packages/memouk/yii2-adminlte-asset) 
+[![Total Downloads](https://poser.pugx.org/memouk/yii2-adminlte-asset/downloads.svg)](https://packagist.org/packages/memouk/yii2-adminlte-asset)
+[![License](https://poser.pugx.org/memouk/yii2-adminlte-asset/license.svg)](https://packagist.org/packages/memouk/yii2-adminlte-asset)
 
 
 *Backend UI for Yii2 Framework, based on [AdminLTE](https://github.com/almasaeed2010/AdminLTE)*
@@ -24,13 +24,13 @@ The preferred way to install this extension is through [composer](http://getcomp
 To install AdminLTE v2 run:
 
 ```
-composer require dmstr/yii2-adminlte-asset "^2.1"
+composer require memouk/yii2-adminlte-asset "^2.1"
 ```
 
 To install AdminLTE v1 run:
 
 ```
-composer require dmstr/yii2-adminlte-asset "^1"
+composer require memouk/yii2-adminlte-asset "^1"
 ```
 
 FAQ
@@ -44,7 +44,7 @@ AdminLTE dropped web-font inclusion in `2.4.0`, so you need to include your desi
 
 > Inclusion via CDN is not recommended for production, please adjust this to your project's asset-bundling workflow.
 
-For details see [#140](https://github.com/dmstr/yii2-adminlte-asset/issues/140).
+For details see [#140](https://github.com/memouk/yii2-adminlte-asset/issues/140).
 
 ### Upgrading
 
@@ -52,7 +52,7 @@ When upgrading please see the [AdminLTE upgrade guide](https://adminlte.io/docs/
 
 ### Composer installation
 
-- For issues with `DmitryBaranovskiy/eve.git`, please see [#128](https://github.com/dmstr/yii2-adminlte-asset/issues/128#issuecomment-361895922) and [#113](https://github.com/dmstr/yii2-adminlte-asset/issues/133#issuecomment-337179853).
+- For issues with `DmitryBaranovskiy/eve.git`, please see [#128](https://github.com/memouk/yii2-adminlte-asset/issues/128#issuecomment-361895922) and [#113](https://github.com/memouk/yii2-adminlte-asset/issues/133#issuecomment-337179853).
 
 ### Compatibility matrix
 
@@ -62,7 +62,7 @@ When upgrading please see the [AdminLTE upgrade guide](https://adminlte.io/docs/
 | 2.5 | 2.4 | required
 | 3.0 | 2.4 | -
 
-> For other [issues](https://github.com/dmstr/yii2-adminlte-asset/issues?utf8=%E2%9C%93&q=is%3Aissue), please search GitHub first.
+> For other [issues](https://github.com/memouk/yii2-adminlte-asset/issues?utf8=%E2%9C%93&q=is%3Aissue), please search GitHub first.
 
 
 Quick Start
@@ -77,7 +77,7 @@ For Yii 2 [Advanced Application Template](https://github.com/yiisoft/yii2-app-ad
     'view' => [
          'theme' => [
              'pathMap' => [
-                '@app/views' => '@vendor/dmstr/yii2-adminlte-asset/example-views/yiisoft/yii2-app'
+                '@app/views' => '@vendor/memouk/yii2-adminlte-asset/example-views/yiisoft/yii2-app'
              ],
          ],
     ],
@@ -85,14 +85,14 @@ For Yii 2 [Advanced Application Template](https://github.com/yiisoft/yii2-app-ad
 ```
 
 
-For [phd5](https://github.com/dmstr/phd5-app) application
+For [phd5](https://github.com/memouk/phd5-app) application
 
 ```php
 'components' => [
     'view' => [
         'theme' => [
             'pathMap' => [
-                '@app/views' => '@vendor/dmstr/yii2-adminlte-asset/example-views/testing/app'
+                '@app/views' => '@vendor/memouk/yii2-adminlte-asset/example-views/testing/app'
             ],
         ],
     ],
@@ -107,7 +107,7 @@ Therefore it is recommended to **copy the views into your application** and adju
 Customization
 -------------
 
-- Copy files from `vendor/dmstr/yii2-adminlte-asset/example-views/yiisoft/yii2-app` (or other theme) to `@app/views`.
+- Copy files from `vendor/memouk/yii2-adminlte-asset/example-views/yiisoft/yii2-app` (or other theme) to `@app/views`.
 - Remove the custom `view` configuration from your application by deleting the path mappings, if you have made them before.
 - Edit your views adhering to html markup `vendor/almasaeed2010/adminlte/pages`
 
@@ -132,7 +132,7 @@ class AdminLtePluginAsset extends AssetBundle
         // more plugin Js here
     ];
     public $depends = [
-        'dmstr\adminlte\web\AdminLteAsset',
+        'memouk\adminlte\web\AdminLteAsset',
     ];
 }
 ```
@@ -211,7 +211,7 @@ if (YII_ENV_DEV) {
             'crud' => [
                 'class' => 'yii\gii\generators\crud\Generator',
                 'templates' => [
-                    'adminlte' => '@vendor/dmstr/yii2-adminlte-asset/gii/templates/crud/simple',
+                    'adminlte' => '@vendor/memouk/yii2-adminlte-asset/gii/templates/crud/simple',
                 ]
             ]
         ],
@@ -242,5 +242,5 @@ Further Information
 
 For AdminLTE documentation, please read https://almsaeedstudio.com/themes/AdminLTE/documentation/index.html
 
-> Namespacing rules follow the Yii 2.0 framework structure, eg. `dmstr\adminlte\web` for the Asset Bundle.
+> Namespacing rules follow the Yii 2.0 framework structure, eg. `memouk\adminlte\web` for the Asset Bundle.
  

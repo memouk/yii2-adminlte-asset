@@ -1,14 +1,14 @@
 <?php
 
-use dmstr\widgets\Alert;
+use memouk\widgets\Alert;
 use yii\helpers\Html;
 
 /* @var $this \yii\web\View */
 /* @var $content string */
 
 $this->title = $this->title . ' [Backend]';
-dmstr\adminlte\web\AdminLteAsset::register($this);
-dmstr\adminlte\web\FontAwesomeAsset::register($this);
+memouk\adminlte\web\AdminLteAsset::register($this);
+memouk\adminlte\web\FontAwesomeAsset::register($this);
 ?>
 
 <?php $this->beginPage() ?>

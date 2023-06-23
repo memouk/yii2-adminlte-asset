@@ -1,5 +1,5 @@
 <?php
-namespace dmstr\adminlte\web;
+namespace memouk\adminlte\web;
 
 use yii\web\AssetBundle;
 

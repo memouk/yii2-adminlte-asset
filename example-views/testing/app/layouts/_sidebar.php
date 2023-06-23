@@ -78,7 +78,7 @@
                 ];
             }
 
-            echo \dmstr\adminlte\widgets\Menu::widget([
+            echo \memouk\adminlte\widgets\Menu::widget([
                 'items' => \yii\helpers\ArrayHelper::merge($favouriteMenuItems, $menuItems)
             ]);
             ?>
