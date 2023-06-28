@@ -25,7 +25,7 @@ memouk\adminlte\web\AdminLteAsset::register($this);
 
     <div class="login-box">
         <div class="login-logo">
-            <?= Html::a('<b>Admin</b>LTE', ['/site/login']); ?>
+            <?= Html::a('<b>Gnu</b>Cannabis', ['/site/login']); ?>
         </div>
 
         <?= \memouk\adminlte\widgets\Alert::widget(); ?>
